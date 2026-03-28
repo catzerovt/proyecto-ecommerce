@@ -97,13 +97,13 @@ Panel de administración
 ## 📸 Vista previa
 
 ### 🏠 Inicio
-![Home](assets/screenshots/home.png)
+![Home](https://github.com/catzerovt/proyecto-ecommerce/blob/main/assets/screenshots/home.png?raw=true)
 
 ### 🛍️ Productos
-![Productos](assets/screenshots/products.png)
+![Productos](https://github.com/catzerovt/proyecto-ecommerce/blob/main/assets/screenshots/products.png?raw=true)
 
 ### 📰 Blog
-![Blog](assets/screenshots/blog.png)
+![Blog](https://github.com/catzerovt/proyecto-ecommerce/blob/main/assets/screenshots/blog.png?raw=true)
 
 ### 📞 Contacto
-![Contacto](assets/screenshots/contact.png)
+![Contacto](https://github.com/catzerovt/proyecto-ecommerce/blob/main/assets/screenshots/contact.png?raw=true)
