@@ -12,7 +12,7 @@ Incluye funcionalidades completas de navegación, carrito de compras y páginas 
 - 📦 Catálogo de productos por categorías
 - 📄 Visualización de catálogos en PDF
 - 📰 Blog con artículos técnicos
-- 🏢 Página “Nosotros” con información corporativa
+- 🏢 Página "Nosotros" con información corporativa
 - 📞 Página de contacto con:
   - Formulario interactivo
   - Modal de confirmación
@@ -33,7 +33,6 @@ Incluye funcionalidades completas de navegación, carrito de compras y páginas 
 ---
 
 ## 📁 Estructura del proyecto
-
 ```bash
 assets/
   ├── catalogs/
@@ -52,47 +51,52 @@ contacto.html
 styles.css
 script.js
 contacto.js
+```
 
 ---
 
-🎨 Diseño
+## 🎨 Diseño
 
 El diseño está basado en una interfaz limpia y corporativa, utilizando una paleta centrada en tonos azules para transmitir confianza y profesionalismo.
 
 Se aplicaron principios de:
 
-jerarquía visual
-consistencia de componentes
-experiencia de usuario (UX)
-
---- 
-
-📌 Notas
-El carrito funciona con localStorage (no backend)
-El formulario de contacto es visual (no envía datos reales)
-Los catálogos están enlazados mediante Google Drive
+- jerarquía visual
+- consistencia de componentes
+- experiencia de usuario (UX)
 
 ---
 
-👩‍💻 Autor
+## 📌 Notas
 
-Proyecto desarrollado por Tania Pastor
+- El carrito funciona con localStorage (no backend)
+- El formulario de contacto es visual (no envía datos reales)
+- Los catálogos están enlazados mediante Google Drive
+
+---
+
+## 👩‍💻 Autor
+
+Proyecto desarrollado por Tania Pastor  
 Como práctica de un E-Commerce
 
 ---
 
-⭐ Estado del proyecto
+## ⭐ Estado del proyecto
 
-✅ Finalizado
+✅ Finalizado  
 💼 Listo para portafolio
 
 ---
 
-💡 Futuras mejoras
-Integración con backend
-Sistema de autenticación
-Procesamiento de pagos
-Panel de administración
+## 💡 Futuras mejoras
+
+- Integración con backend
+- Sistema de autenticación
+- Procesamiento de pagos
+- Panel de administración
+
+---
 
 ## 📸 Vista previa
 
