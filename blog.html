@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Aselcorp</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-left">
+        <span class="item">
+          <img src="assets/icons/mail.png" class="icon">
+          asesores@aselcorp.com.pe
+        </span>
+
+        <span class="item">
+          <img src="assets/icons/telephone.png" class="icon">
+          (511) 940 751 509
+        </span>
+      </div>
+
+      <div class="topbar-right">
+        <a href="#" class="item">
+          <img src="assets/icons/question.png" class="icon">
+          Atención al cliente
+        </a>
+
+        <span class="divider"></span>
+
+        <a href="#" class="item">
+          <img src="assets/icons/briefcase.png" class="icon">
+          Proveedores
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <div class="container navbar-container">
+      <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/aselcorp-logo-crop.png" alt="Aselcorp Logo">
+          </a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Buscar por producto, marca, sku...">
+        <button><i class='bx bx-search'></i></button>
+      </div>
+
+      <div class="nav-icons">
+        <a href="#" class="login">Iniciar sesión</a>
+        <i class='bx bx-user'></i>
+        <i class='bx bx-heart'></i>
+        <a href="cart.html" class="cart-icon">
+          <i class='bx bx-cart'></i>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-bar">
+    <div class="container menu-container">
+      <nav class="menu">
+        <a href="products.html">Productos</a>
+        <a href="catalogs.html">Catálogos</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contáctanos</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ===== GRID DE BLOG  ===== -->
+
+<main class="blog-page container">
+  <div class="blog-hero">
+    <span class="blog-badge">Blog</span>
+    <h1>Ideas, guías y contenido técnico</h1>
+    <p>
+      Explora artículos sobre soluciones eléctricas, seguridad industrial,
+      iluminación y mejores prácticas para tus proyectos.
+    </p>
+  </div>
+
+  <div class="blog-grid-pro">
+
+    <article class="blog-card-pro">
+      <div class="blog-card-image">
+        <img src="assets/images/pinza-amperimetrica.jpg" alt="Pinza amperimétrica">
+        <span class="blog-tag">Medición</span>
+      </div>
+
+      <div class="blog-card-content">
+        <h3>Pinza amperimétrica: qué es y cómo usarla correctamente</h3>
+        <p>
+          Aprende para qué sirve una pinza amperimétrica y cómo utilizarla
+          de forma segura en trabajos eléctricos.
+        </p>
+        <a href="#" class="blog-link-btn">Leer artículo</a>
+      </div>
+    </article>
+
+    <article class="blog-card-pro">
+      <div class="blog-card-image">
+        <img src="assets/images/linternas-cascos.jpg" alt="Linternas de casco">
+        <span class="blog-tag">Seguridad</span>
+      </div>
+
+      <div class="blog-card-content">
+        <h3>Guía para usar linternas de casco con batería recargable</h3>
+        <p>
+          Descubre cómo elegir y usar linternas para casco en entornos
+          industriales y de trabajo exigente.
+        </p>
+        <a href="#" class="blog-link-btn">Leer artículo</a>
+      </div>
+    </article>
+
+    <article class="blog-card-pro">
+      <div class="blog-card-image">
+        <img src="assets/images/fundamentos-gestion-calidad.jpg" alt="Calidad de energía">
+        <span class="blog-tag">Energía</span>
+      </div>
+
+      <div class="blog-card-content">
+        <h3>Fundamentos de la gestión y calidad de energía</h3>
+        <p>
+          Revisa conceptos clave sobre eficiencia, estabilidad y buenas
+          prácticas para una mejor calidad energética.
+        </p>
+        <a href="#" class="blog-link-btn">Leer artículo</a>
+      </div>
+    </article>
+
+    <article class="blog-card-pro">
+      <div class="blog-card-image">
+        <img src="assets/images/cuales-son-los-mas-utiles-medicion.jpg" alt="Instrumentos de medición">
+        <span class="blog-tag">Instrumentos</span>
+      </div>
+
+      <div class="blog-card-content">
+        <h3>Instrumentos de medición: cuáles son los más útiles</h3>
+        <p>
+          Conoce los equipos más usados en instalaciones eléctricas y cuándo
+          conviene utilizar cada uno.
+        </p>
+        <a href="#" class="blog-link-btn">Leer artículo</a>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<!-- ===== OUTLET BANNER ===== -->
+<section class="outlet-banner">
+  <div class="container">
+    <a href="#" class="outlet-banner-link">
+      <img src="assets/images/banner-outlet.jpg" alt="Banner Outlet">
+    </a>
+  </div>
+</section>
+
+<!-- ===== INFO BAR ===== -->
+<div class="info-bar">
+  <div class="info-item">
+    <img src="assets/icons/envio.png" alt="Envío a domicilio">
+    <h4>Envío a domicilio</h4>
+    <p>Recíbelo donde tú quieras</p>
+  </div>
+
+  <div class="info-item">
+    <img src="assets/icons/retiro.png" alt="Retiro en tienda">
+    <h4>Retiro en tienda</h4>
+    <p>Compra online y ahorra en envío</p>
+  </div>
+
+  <div class="info-item">
+    <img src="assets/icons/location.png" alt="Nuestras tiendas">
+    <h4>Nuestras tiendas</h4>
+    <p>Conoce todas nuestras tiendas</p>
+  </div>
+
+  <div class="info-item">
+    <img src="assets/icons/servicio-al-cliente.png" alt="Servicio al Cliente">
+    <h4>Servicio al Cliente</h4>
+    <p>Estamos para atenderte</p>
+  </div>
+</div>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter">
+  <div class="newsletter-container">
+
+    <div class="newsletter-left">
+      <h2>Suscríbete a nuestro newsletter</h2>
+      <p>
+        Recibe novedades sobre las mejores marcas,
+        productos destacados y soluciones para tu negocio.
+      </p>
+    </div>
+
+    <div class="newsletter-right">
+      <label>Correo electrónico:</label>
+      <div class="newsletter-form">
+        <input type="email" placeholder="ejemplo@mail.com">
+        <button>Suscribirme</button>
+      </div>
+
+      <div class="newsletter-check">
+        <input type="checkbox" id="terms">
+        <label for="terms">
+          Acepto los <a href="#">Términos y Condiciones</a> y la
+          <a href="#">Política de privacidad</a>
+        </label>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col footer-brand">
+      <img src="assets/images/logo-aselcorp-black.png" alt="Aselcorp" class="footer-logo">
+
+      <ul class="footer-contact">
+        <li><strong>Oficina de Venta:</strong> Av. Cesar Vallejo 136 - Lince</li>
+        <li><strong>Correo Ventas:</strong> asesores@aselcorp.com.pe</li>
+        <li><strong>Almacenes y transporte:</strong> Los Castaños 119 Urb. Country Club - San Isidro</li>
+        <li><strong>Servicios:</strong> Calle Húsares de Junín Mz19C Lot. 03 - Lurigancho</li>
+        <li><strong>Ventas:</strong> 940 751 509</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>NUESTRA EMPRESA</h4>
+      <ul>
+        <li><a href="#">Conócenos</a></li>
+        <li><a href="#">Trabaja con nosotros</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>ATENCIÓN AL CLIENTE</h4>
+      <ul>
+        <li><a href="#">Política de Cambios y Devoluciones</a></li>
+        <li><a href="#">Política de Despacho</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>CUENTAS BANCARIAS</h4>
+      <ul class="bank-info">
+        <li><strong>Cuenta Corriente - Soles</strong><br>191-2559367-0-90</li>
+        <li><strong>CCI - Soles</strong><br>002-191-002559367951</li>
+        <li><strong>Cuenta Corriente - Dólares</strong><br>191-7227962-1-25</li>
+        <li><strong>CCI - Dólares</strong><br>002-191-00722796212553</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-social">
+    <h4>SÍGUENOS</h4>
+    <div class="social-icons">
+      <img src="assets/icons/icon-linkedin.png" alt="LinkedIn">
+      <img src="assets/icons/icon-facebook.png" alt="Facebook">
+      <img src="assets/icons/icons-instagram.png" alt="Instagram">
+      <img src="assets/icons/icons-youtube.png" alt="YouTube">
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Asesores Electricos Corporacion EIRL 2026 © Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ===== WHATSAPP ===== -->
+<div class="whatsapp-container">
+  <div class="whatsapp-message" id="whatsapp-message">
+    <span>¿Necesitas ayuda?</span>
+    <strong>Conversa con un asesor</strong>
+  </div>
+
+  <a
+    href="https://wa.me/51940751509?text=Hola,%20quiero%20información%20sobre%20sus%20productos"
+    class="whatsapp-btn"
+    target="_blank"
+    aria-label="WhatsApp"
+  >
+    <i class='bx bxl-whatsapp'></i>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Aselcorp</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-left">
+        <span class="item">
+          <img src="assets/icons/mail.png" class="icon">
+          asesores@aselcorp.com.pe
+        </span>
+
+        <span class="item">
+          <img src="assets/icons/telephone.png" class="icon">
+          (511) 940 751 509
+        </span>
+      </div>
+
+      <div class="topbar-right">
+        <a href="#" class="item">
+          <img src="assets/icons/question.png" class="icon">
+          Atención al cliente
+        </a>
+
+        <span class="divider"></span>
+
+        <a href="#" class="item">
+          <img src="assets/icons/briefcase.png" class="icon">
+          Proveedores
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <div class="container navbar-container">
+      <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/aselcorp-logo-crop.png" alt="Aselcorp Logo">
+          </a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Buscar por producto, marca, sku...">
+        <button><i class='bx bx-search'></i></button>
+      </div>
+
+      <div class="nav-icons">
+        <a href="#" class="login">Iniciar sesión</a>
+        <i class='bx bx-user'></i>
+        <i class='bx bx-heart'></i>
+        <a href="cart.html" class="cart-icon">
+          <i class='bx bx-cart'></i>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-bar">
+    <div class="container menu-container">
+      <nav class="menu">
+        <a href="products.html" class="active">Productos</a>
+        <a href="#">Catálogos</a>
+        <a href="#">Blog</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contáctanos</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="cart-page container">
+  <div class="cart-layout">
+
+    <div class="cart-left">
+      <h1>Carrito de compras</h1>
+      <div id="cart-container" class="cart-container"></div>
+    </div>
+
+    <div class="cart-right">
+      <div class="cart-summary">
+        <h2>Resumen de la orden</h2>
+
+        <div class="summary-line">
+          <span>Productos</span>
+          <span id="cart-items-count">0</span>
+        </div>
+
+        <div class="summary-line total-line">
+          <span>Total</span>
+          <span id="cart-total">S/ 0.00</span>
+        </div>
+
+        <button id="checkout-btn" class="checkout-btn">
+          Continuar compra
+        </button>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+
+
+<!-- ==== BOTONCITO FLOTANTE WHATSAPP ===== -->
+<div class="whatsapp-container">
+  <div class="whatsapp-message" id="whatsapp-message">
+    <span>¿Necesitas ayuda?</span>
+    <strong>Conversa con un asesor</strong>
+  </div>
+
+  <a
+    href="https://wa.me/51940751509?text=Hola,%20quiero%20información%20sobre%20sus%20productos"
+    class="whatsapp-btn"
+    target="_blank"
+    aria-label="WhatsApp"
+  >
+    <i class='bx bxl-whatsapp'></i>
+  </a>
+</div>
+
+
+<script src="cart.js"></script>
+</body>
+</html>
+
+<!-- ==== CHECKOUT MODAL ====-->
+
+<div id="checkout-modal" class="checkout-modal">
+  <div class="checkout-modal-content">
+    <div class="checkout-icon">✓</div>
+    <h3>¡Compra realizada con éxito!</h3>
+    <p>Gracias por tu compra. Tu pedido fue procesado correctamente.</p>
+
+    <div class="checkout-actions">
+      <a href="products.html" class="checkout-link-btn">Seguir comprando</a>
+    </div>
+  </div>
+</div>

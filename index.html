@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-Ecommerce</title>
+
+<!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!--Icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+
+<body>
+
+
+<!-- ===== HEADER ===== -->
+
+<header>
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-left">
+          <span class="item">
+            <img src="assets/icons/mail.png" class="icon">
+            asesores@aselcorp.com.pe
+          </span>
+
+
+        <span class="item">
+          <img src="assets/icons/telephone.png" class="icon">
+          (511) 940 751 509
+        </span>
+      </div>
+
+      <div class="topbar-right">
+        <a href="#" class="item">
+          <img src="assets/icons/question.png" class="icon">
+          Atención al cliente
+        </a>
+
+        <span class="divider"></span>
+
+
+        <a href="#" class="item">
+          <img src="assets/icons/briefcase.png" class="icon">
+        Proveedores</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="navbar">
+    <div class="container navbar-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/aselcorp-logo-crop.png" alt="Aselcorp Logo">
+        </a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Buscar por producto, marca, sku...">
+        <button><i class='bx bx-search'></i></button>
+      </div>
+
+      <div class="nav-icons">
+        <a href="#" class="login">Iniciar sesión</a>
+        <i class='bx bx-user'></i>
+        <i class='bx bx-heart'></i>
+        <a href="cart.html" class="cart-icon">
+          <i class='bx bx-cart'></i>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-bar">
+    <div class="container menu-container">
+      <nav class="menu">
+        <a href="products.html" class="active">Productos</a>
+        <a href="catalogs.html">Catalogos</a>
+        <a href="blog.html">Blog</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contáctanos</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- ===== HERO / BANNER PRINCIPAL ===== -->
+
+<section class="hero">
+  <div class="hero-slider">
+    <div class="hero-track">
+      <div class="hero-slide"><img src="assets/images/banner-1.jpg" alt="Banner 1"></div>
+      <div class="hero-slide"><img src="assets/images/banner-2.jpg" alt="Banner 2"></div>
+      <div class="hero-slide"><img src="assets/images/banner-3.jpg" alt="Banner 3"></div>
+      <div class="hero-slide"><img src="assets/images/banner-4.jpg" alt="Banner 4"></div>
+      <div class="hero-slide"><img src="assets/images/banner-5.jpg" alt="Banner 5"></div>
+      <div class="hero-slide"><img src="assets/images/banner-6.jpg" alt="Banner 6"></div>
+    </div>
+  </div>
+
+  <div class="hero-dots">
+    <span class="dot active" data-slide="0"></span>
+    <span class="dot" data-slide="1"></span>
+    <span class="dot" data-slide="2"></span>
+    <span class="dot" data-slide="3"></span>
+    <span class="dot" data-slide="4"></span>
+    <span class="dot" data-slide="5"></span>
+  </div>
+</section>
+
+
+<!-- ===== CATEGORIAS DESTACADAS ===== -->
+
+<section class="categories">
+  <div class="container categories-container">
+
+    <div class="categories-top">
+      <h2>Categorías destacadas</h2>
+
+      <div class="categories-actions">
+        <button class="all-categories-btn">Ver todas las categorías</button>
+
+        <div class="categories-arrows">
+          <button class="cat-arrow prev">‹</button>
+          <button class="cat-arrow next">›</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="categories-slider">
+      <div class="categories-track">
+
+        <!-- PAGE 1 -->
+        <div class="categories-page">
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/cables.jpg" alt="Cables y Conductores">
+            </div>
+            <p>Cables y Conductores</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/materiales.jpg" alt="Materiales para Instalaciones eléctricas">
+            </div>
+            <p>Materiales para Instalaciones eléctricas</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/distribuicion.jpg" alt="Distribución Eléctrica en Baja Tensión">
+            </div>
+            <p>Distribución Eléctrica en Baja Tensión</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/iluminacion.jpg" alt="Iluminación">
+            </div>
+            <p>Iluminación</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/seguridad.jpg" alt="Seguridad Eléctrica e industrial">
+            </div>
+            <p>Seguridad Eléctrica e industrial</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/puesta-tierra.jpg" alt="Sistema de Puestas a Tierra">
+            </div>
+            <p>Sistema de Puestas a Tierra</p>
+          </div>
+        </div>
+
+        <!-- PAGE 2 -->
+        <div class="categories-page">
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/proteccion-seccionamiento.jpg" alt="Protección Seccionamiento">
+            </div>
+            <p>Protección Seccionamiento</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/gestion-calidad-energia.jpg" alt="Gestión Calidad Energía">
+            </div>
+            <p>Gestión Calidad Energía</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/instrumentos-medicion.jpg" alt="Instrumentos Medición">
+            </div>
+            <p>Instrumentos Medición</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/materiales-areas-clasificadas.jpg" alt="Materiales Áreas Clasificadas">
+            </div>
+            <p>Materiales Áreas Clasificadas</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/proteccion-control-baja-tension.jpg" alt="Protección Control Baja Tensión">
+            </div>
+            <p>Protección Control Baja Tensión</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/proteccion-seccion-met.jpg" alt="Protección Sección en Met">
+            </div>
+            <p>Protección Sección en Met</p>
+          </div>
+        </div>
+
+        <!-- PAGE 3 -->
+        <div class="categories-page">
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/instrumentos-medicion.jpg" alt="Instrumentos Medición">
+            </div>
+            <p>Instrumentos Medición</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/materiales-areas-clasificadas.jpg" alt="Materiales Áreas Clasificadas">
+            </div>
+            <p>Materiales Áreas Clasificadas</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/proteccion-control-baja-tension.jpg" alt="Protección Control Baja Tensión">
+            </div>
+            <p>Protección Control Baja Tensión</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/proteccion-seccion-met.jpg" alt="Protección Sección en Met">
+            </div>
+            <p>Protección Sección en Met</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/tuberias-canalizacion.jpg" alt="Tuberías Canalización">
+            </div>
+            <p>Tuberías Canalización</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <img src="assets/images/control-proteccion-motores.jpg" alt="Control Protección Motores">
+            </div>
+            <p>Control Protección Motores</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="categories-dots">
+      <span class="cat-dot active"></span>
+      <span class="cat-dot"></span>
+      <span class="cat-dot"></span>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===== SOLUCIONES POR INDUSTRIA ===== -->
+
+<section class="industries">
+  <div class="industries-bg"></div>
+
+  <div class="container industries-container">
+    <div class="industries-top">
+      <h2>Soluciones por Industria</h2>
+
+      <div class="industries-arrows">
+        <button class="industry-arrow prev-industry">‹</button>
+        <button class="industry-arrow next-industry">›</button>
+      </div>
+    </div>
+
+    <div class="industries-slider">
+      <div class="industries-track">
+
+        <article class="industry-card">
+          <img src="assets/images/retail-construccion.jpg" alt="Retail y Construcción">
+          <div class="industry-content">
+            <h3>Retail y Construcción</h3>
+            <p>Soluciones eléctricas integrales para sectores que demandan continuidad, eficiencia y seguridad.</p>
+            <button>Conocer más</button>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="assets/images/mineria.jpg" alt="Minería">
+          <div class="industry-content">
+            <h3>Minería</h3>
+            <p>La minería, que representa cerca del 14% del PBI y el 60% de las exportaciones del Perú, exige continuidad operativa y máxima...</p>
+            <button>Conocer más</button>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="assets/images/oil-gas.jpg" alt="OIL & GAS">
+          <div class="industry-content">
+            <h3>OIL & GAS</h3>
+            <p>El petróleo es el producto más comercializado del mundo y una pieza clave de la economía global.</p>
+            <button>Conocer más</button>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="assets/images/energia.jpg" alt="Energía">
+          <div class="industry-content">
+            <h3>Energía</h3>
+            <p>El sector energético es clave para el desarrollo del país, impulsando industrias, servicios y hogares con un suministro constante y...</p>
+            <button>Conocer más</button>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="assets/images/agroindustria.jpg" alt="Agroindustria">
+          <div class="industry-content">
+            <h3>Agroindustria</h3>
+            <p>En Promelsa acompañamos a la agroindustria con soluciones eléctricas diseñadas para ambientes exigentes, normativas estrictas y...</p>
+            <button>Conocer más</button>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <img src="assets/images/alimentos-bebidas.jpg" alt="Alimentos y Bebidas">
+          <div class="industry-content">
+            <h3>Alimentos y Bebidas</h3>
+            <p>Procesos seguros, eficientes y continuos para una industria que no se detiene.</p>
+            <button>Conocer más</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="industries-dots">
+      <span class="industry-dot active"></span>
+      <span class="industry-dot"></span>
+      <span class="industry-dot"></span>
+      <span class="industry-dot"></span>
+      <span class="industry-dot"></span>
+      <span class="industry-dot"></span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== PRODUCTOS DESTACADOS ===== -->
+
+<section class="products-featured">
+  <div class="container products-container">
+
+    <div class="products-top">
+      <h2>Productos destacados</h2>
+
+      <div class="products-arrows">
+        <div class="products-arrows">
+          <button class="product-arrow prev-product">‹</button>
+          <button class="product-arrow next-product">›</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="products-slider">
+      <div class="products-track">
+
+        <article class="product-card">
+          <button class="wishlist-btn">
+          <img src="assets/icons/heart.svg" alt="wishlist">
+          </button>
+          <div class="product-image">
+            <img src="assets/images/tape-super33.jpg" alt="Tape Super 33">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">3M</span>
+            <h3 class="product-title">Cinta aislante vinílica Scotch 33+ x19mm</h3>
+            <span class="product-sku">SKU: 1003163</span>
+            <div class="product-price">S/ 26.38 <span>Inc. IGV</span></div>
+
+           <button 
+              class="product-cart-btn add-to-cart-home"
+              data-id="1001"
+              data-title="Cinta aislante vinílica Scotch 33+ x19mm"
+              data-price="26.38"
+              data-image="assets/images/tape-super33.jpg"
+              data-category="cables"
+              >
+            <img src="assets/icons/cart.svg" alt="cart">
+            </button>
+          </div>
+        </article>
+
+      <article class="product-card">
+       <button class="wishlist-btn">
+        <img src="assets/icons/heart.svg" alt="wishlist">
+        </button>
+
+      <div class="product-image">
+      <img src="assets/images/tubo-conduit-emt-34.jpg" alt="Tubo conduit EMT 3/4">
+      </div>
+
+      <div class="product-info">
+      <span class="product-brand">L.J.</span>
+      <h3 class="product-title">Tubo Conduit acero galvanizado EMT 3/4 x 3mts, UL</h3>
+      <span class="product-sku">SKU: 1037601</span>
+      <div class="product-price">S/ 11.45 <span>Inc. IGV</span></div>
+
+      <button 
+      class="product-cart-btn add-to-cart-home"
+      data-id="1002"
+      data-title="Tubo Conduit acero galvanizado EMT 3/4 x 3mts, UL"
+      data-price="11.45"
+      data-image="assets/images/tubo-conduit-emt-34.jpg"
+      data-category="cables"
+      >
+      <img src="assets/icons/cart.svg" alt="cart">
+      </button>
+      </div>
+      </article>
+
+        <article class="product-card">
+          <button class="wishlist-btn">
+          <img src="assets/icons/heart.svg" alt="wishlist">
+          </button>
+          <div class="product-image">
+            <img src="assets/images/cable-indeco-unipolar.jpg" alt="Cable Indeco unipolar">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">INDECO</span>
+            <h3 class="product-title">Cable NYA07 (H07V-U) unipolar 450/750V libre de halógeno</h3>
+            <span class="product-sku">SKU: 1093115</span>
+            <div class="product-stock">Consulta disponibilidad</div>
+            <button 
+              class="product-cart-btn add-to-cart-home"
+              data-id="1003"
+              data-title="Cable NYA07 (H07V-U) unipolar 450/750V libre de halógeno"
+              data-price="195.88"
+              data-image="assets/images/cable-indeco-unipolar.jpg"
+              data-category="cables"
+              >
+              <img src="assets/icons/whatsapp.svg" alt="whatsapp">
+            Cotizar aquí
+            </button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <button class="wishlist-btn">
+          <img src="assets/icons/heart.svg" alt="wishlist">
+          </button>
+          <div class="product-image">
+            <img src="assets/images/tubo-conduit-1-12.jpg" alt="Tubo conduit 1 1/2">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">L.J.</span>
+            <h3 class="product-title">Tubo Conduit acero galvanizado rígido EMT 1 1/2 x 3mts</h3>
+            <span class="product-sku">SKU: 1037602</span>
+            <div class="product-price">S/ 126.40 <span>Inc. IGV</span></div>
+            <button 
+            class="product-cart-btn add-to-cart-home"
+            data-id="1004"
+            data-title="Tubo Conduit acero galvanizado rígido EMT 1 1/2 x 3mts"
+            data-price="126.40"
+            data-image="assets/images/tubo-conduit-1-12.jpg"
+            data-category="cables"
+          >            
+            <img src="assets/icons/cart.svg" alt="cart">
+            </button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <button class="wishlist-btn">
+          <img src="assets/icons/heart.svg" alt="wishlist">
+          </button>
+          <div class="product-image">
+            <img src="assets/images/cinta-aislante-autofundente.jpg" alt="Cinta aislante autofundente">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">3M</span>
+            <h3 class="product-title">Cinta aislante autofundente Scotch 23 x 9.15mts 69kV</h3>
+            <span class="product-sku">SKU: 1040483</span>
+            <div class="product-price">S/ 67.61 <span>Inc. IGV</span></div>
+            <button 
+            class="product-cart-btn add-to-cart-home"
+            data-id="1005"
+            data-title="Cinta aislante autofundente Scotch 23 x 9.15mts 69kV"
+            data-price="67.61"
+            data-image="assets/images/cinta-aislante-autofundente.jpg"
+            data-category="cables"
+          >
+            <img src="assets/icons/cart.svg" alt="cart">
+          </button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <button class="wishlist-btn">
+          <img src="assets/icons/heart.svg" alt="wishlist">
+          </button>
+          <div class="product-image">
+            <img src="assets/images/guante-aislante.jpg" alt="Guante aislante">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">SOFAMEL</span>
+            <h3 class="product-title">Guante aislante Clase 0 (&lt;1kV) talla 09 de látex</h3>
+            <span class="product-sku">SKU: 1039113</span>
+            <div class="product-stock">Consulta disponibilidad</div>
+            <button 
+              class="product-cart-btn add-to-cart-home"
+              data-id="1006"
+              data-title="Guante aislante Clase 0 (1kV) talla 09 de látex"
+              data-price="195.88"
+              data-image="assets/images/guante-aislante.jpg"
+              data-category="cables"
+              >
+            <img src="assets/icons/whatsapp.svg" alt="whatsapp">
+            Cotizar aquí
+            </button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <button class="wishlist-btn">
+          <img src="assets/icons/heart.svg" alt="wishlist">
+          </button>
+          <div class="product-image">
+            <img src="assets/images/tubo-conduit-imc-34.jpg" alt="Tubo conduit IMC 3/4">
+          </div>
+          <div class="product-info">
+            <span class="product-brand">E.F.</span>
+            <h3 class="product-title">Tubo Conduit acero galvanizado IMC 3/4 x 3mts, UL</h3>
+            <span class="product-sku">SKU: 1037501</span>
+            <div class="product-price">S/ 22.20 <span>Inc. IGV</span></div>
+            <button 
+              class="product-cart-btn add-to-cart-home"
+              data-id="1007"
+              data-title="Tubo Conduit acero galvanizado IMC 3/4 x 3mts, UL"
+              data-price="22.20"
+              data-image="assets/images/tubo-conduit-imc-34.jpg"
+              data-category="cables"
+              >
+              <img src="assets/icons/cart.svg" alt="cart">
+            </button>
+            </div>
+        </article>
+
+        <article class="product-card">
+          <button class="wishlist-btn">
+          <img src="assets/icons/heart.svg" alt="wishlist">
+          </button>
+          <div class="product-image">
+            <img src="assets/images/reflector-philips.jpg" alt="Reflector Philips">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">PRECIO ESPECIAL</span>
+            <span class="product-brand">PHILIPS</span>
+            <h3 class="product-title">Reflector BVP151 G3 LED240/CW 220-240V 200W</h3>
+            <span class="product-sku">SKU: 1044054</span>
+            <div class="product-price">S/ 233.03 <span>Inc. IGV</span></div>
+            <button 
+              class="product-cart-btn add-to-cart-home"
+              data-id="1008"
+              data-title="Reflector BVP151 G3 LED240/CW 220-240V 200W"
+              data-price="233.03"
+              data-image="assets/images/reflector-philips.jpg"
+              data-category="cables"
+              >
+              <img src="assets/icons/cart.svg" alt="cart">
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="products-dots">
+      <span class="product-dot active"></span>
+      <span class="product-dot"></span>
+      <span class="product-dot"></span>
+      <span class="product-dot"></span>
+      <span class="product-dot"></span>
+      <span class="product-dot"></span>
+      <span class="product-dot"></span>
+      <span class="product-dot"></span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+ 
+<section class="blog">
+  <div class="container blog-container">
+
+    <div class="blog-top">
+      <h2>Explora nuestro blog</h2>
+      <button class="blog-btn">Ver más artículos</button>
+    </div>
+
+    <!-- Tarjetas -->
+    <div class="blog-grid">
+
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="assets/images/pinza-amperimetrica.jpg" alt="Pinza amperimétrica">
+        </div>
+        <div class="blog-content">
+          <p class="blog-title">
+            Pinza amperimétrica: ¿Qué es y cómo utilizarla correctamente?
+          </p>
+          <button class="blog-read">Leer más</button>
+        </div>
+      </article>
+
+         <article class="blog-card">
+        <div class="blog-image">
+          <img src="assets/images/linternas-cascos.jpg" alt="Linternas de casco">
+        </div>
+        <div class="blog-content">
+          <p class="blog-title">
+            Guía para usar linternas de casco con batería recargable
+          </p>
+          <button class="blog-read">Leer más</button>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="assets/images/fundamentos-gestion-calidad.jpg" alt="Fundamentos de la gestión y calidad de energía">
+        </div>
+        <div class="blog-content">
+          <p class="blog-title">
+            Fundamentos de la gestión y calidad de energía
+          </p>
+          <button class="blog-read">Leer más</button>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="assets/images/cuales-son-los-mas-utiles-medicion.jpg" alt="Instrumentos de medición">
+        </div>
+        <div class="blog-content">
+          <p class="blog-title">
+            Instrumentos de medición: ¿Cuáles son los más útiles?
+          </p>
+          <button class="blog-read">Leer más</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== MARCAS ===== -->
+<section class="brands">
+  <div class="container brands-container">
+
+    <div class="brands-counter">
+      <span class="brands-plus">+</span>
+      <span class="brands-number" data-target="130">0</span>
+      <span class="brands-label">marcas</span>
+    </div>
+
+    <div class="brands-slider">
+      <div class="brands-track">
+
+        <!-- SLIDE 1 -->
+        <div class="brands-page">
+          <div class="brand-item"><img src="assets/images/brand-1.png" alt="Marca 1"></div>
+          <div class="brand-item"><img src="assets/images/brand-2.png" alt="Marca 2"></div>
+          <div class="brand-item"><img src="assets/images/brand-3.png" alt="Marca 3"></div>
+          <div class="brand-item"><img src="assets/images/brand-4.png" alt="Marca 4"></div>
+          <div class="brand-item"><img src="assets/images/brand-5.png" alt="Marca 5"></div>
+          <div class="brand-item"><img src="assets/images/brand-6.png" alt="Marca 6"></div>
+          <div class="brand-item"><img src="assets/images/brand-7.png" alt="Marca 7"></div>
+          <div class="brand-item"><img src="assets/images/brand-8.png" alt="Marca 8"></div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="brands-page">
+          <div class="brand-item"><img src="assets/images/brand-9.png" alt="Marca 9"></div>
+          <div class="brand-item"><img src="assets/images/brand-10.png" alt="Marca 10"></div>
+          <div class="brand-item"><img src="assets/images/brand-11.png" alt="Marca 11"></div>
+          <div class="brand-item"><img src="assets/images/brand-12.png" alt="Marca 12"></div>
+          <div class="brand-item"><img src="assets/images/brand-13.png" alt="Marca 13"></div>
+          <div class="brand-item"><img src="assets/images/brand-14.png" alt="Marca 14"></div>
+          <div class="brand-item"><img src="assets/images/brand-15.png" alt="Marca 15"></div>
+          <div class="brand-item"><img src="assets/images/brand-16.png" alt="Marca 16"></div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="brands-page">
+          <div class="brand-item"><img src="assets/images/brand-17.png" alt="Marca 17"></div>
+          <div class="brand-item"><img src="assets/images/brand-18.png" alt="Marca 18"></div>
+          <div class="brand-item"><img src="assets/images/brand-19.png" alt="Marca 19"></div>
+          <div class="brand-item"><img src="assets/images/brand-20.png" alt="Marca 20"></div>
+          <div class="brand-item"><img src="assets/images/brand-21.png" alt="Marca 21"></div>
+          <div class="brand-item"><img src="assets/images/brand-22.png" alt="Marca 22"></div>
+          <div class="brand-item"><img src="assets/images/brand-23.png" alt="Marca 23"></div>
+          <div class="brand-item"><img src="assets/images/brand-24.png" alt="Marca 24"></div>
+        </div>
+
+        <!-- SLIDE 4 -->
+        <div class="brands-page">
+          <div class="brand-item"><img src="assets/images/brand-25.png" alt="Marca 25"></div>
+          <div class="brand-item"><img src="assets/images/brand-26.png" alt="Marca 26"></div>
+          <div class="brand-item"><img src="assets/images/brand-27.png" alt="Marca 27"></div>
+          <div class="brand-item"><img src="assets/images/brand-28.png" alt="Marca 28"></div>
+          <div class="brand-item"><img src="assets/images/brand-29.png" alt="Marca 29"></div>
+          <div class="brand-item"><img src="assets/images/brand-30.png" alt="Marca 30"></div>
+          <div class="brand-item"><img src="assets/images/brand-31.png" alt="Marca 31"></div>
+          <div class="brand-item"><img src="assets/images/brand-32.png" alt="Marca 32"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="brands-dots">
+      <span class="brand-dot active"></span>
+      <span class="brand-dot"></span>
+      <span class="brand-dot"></span>
+      <span class="brand-dot"></span>
+    </div>
+
+  </div>
+</section>
+
+
+ <!-- ===== BANNER OUTLET ===== -->
+
+<section class="outlet-banner">
+  <div class="container">
+    <a href="#" class="outlet-banner-link">
+      <img src="assets/images/banner-outlet.jpg" alt="Banner Outlet">
+    </a>
+  </div>
+</section>
+
+
+<div class="info-bar">
+  <div class="info-item">
+    <img src="assets/icons/envio.png" alt="Envío a domicilio">
+    <h4>Envío a domicilio</h4>
+    <p>Recíbelo donde tú quieras</p>
+  </div>
+
+  <div class="info-item">
+    <img src="assets/icons/retiro.png" alt="Retiro en tienda">
+    <h4>Retiro en tienda</h4>
+    <p>Compra online y ahorra en envío</p>
+  </div>
+
+  <div class="info-item">
+    <img src="assets/icons/location.png" alt="Nuestras tiendas">
+    <h4>Nuestras tiendas</h4>
+    <p>Conoce todas nuestras tiendas</p>
+  </div>
+
+  <div class="info-item">
+    <img src="assets/icons/servicio-al-cliente.png" alt="Servicio al Cliente">
+    <h4>Servicio al Cliente</h4>
+    <p>Estamos para atenderte</p>
+  </div>
+</div>
+
+
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter">
+  <div class="newsletter-container">
+
+    <div class="newsletter-left">
+      <h2>Suscríbete a nuestro newsletter</h2>
+      <p>
+        Recibe novedades sobre las mejores marcas,
+        productos destacados y soluciones para tu negocio.
+      </p>
+    </div>
+
+    <div class="newsletter-right">
+      <label>Correo electrónico:</label>
+      <div class="newsletter-form">
+        <input type="email" placeholder="ejemplo@mail.com">
+        <button>Suscribirme</button>
+      </div>
+
+      <div class="newsletter-check">
+        <input type="checkbox" id="terms">
+        <label for="terms">
+          Acepto los <a href="#">Términos y Condiciones</a> y la
+           <a href="#">Política de privacidad</a>
+         </label>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col footer-brand">
+      <img src="assets/images/logo-aselcorp-black.png" alt="Aselcorp" class="footer-logo">
+
+      <ul class="footer-contact">
+        <li><strong>Oficina de Venta:</strong> Av. Cesar Vallejo 136 - Lince</li>
+        <li><strong>Correo Ventas:</strong> asesores@aselcorp.com.pe</li>
+        <li><strong>Almacenes y transporte:</strong> Los Castaños 119 Urb. Country Club - San Isidro</li>
+        <li><strong>Servicios:</strong> Calle Húsares de Junín Mz19C Lot. 03 - Lurigancho</li>
+        <li><strong>Ventas:</strong> 940 751 509</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>NUESTRA EMPRESA</h4>
+      <ul>
+        <li><a href="#">Conócenos</a></li>
+        <li><a href="#">Trabaja con nosotros</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>ATENCIÓN AL CLIENTE</h4>
+      <ul>
+        <li><a href="#">Política de Cambios y Devoluciones</a></li>
+        <li><a href="#">Política de Despacho</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>CUENTAS BANCARIAS</h4>
+      <ul class="bank-info">
+        <li><strong>Cuenta Corriente - Soles</strong><br>191-2559367-0-90</li>
+        <li><strong>CCI - Soles</strong><br>002-191-002559367951</li>
+        <li><strong>Cuenta Corriente - Dólares</strong><br>191-7227962-1-25</li>
+        <li><strong>CCI - Dólares</strong><br>002-191-00722796212553</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-social">
+    <h4>SÍGUENOS</h4>
+    <div class="social-icons">
+      <img src="assets/icons/icon-linkedin.png" alt="LinkedIn">
+      <img src="assets/icons/icon-facebook.png" alt="Facebook">
+      <img src="assets/icons/icons-instagram.png" alt="Instagram">
+      <img src="assets/icons/icons-youtube.png" alt="YouTube">
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Asesores Electricos Corporacion EIRL 2026 © Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ==== CARRITO MODAL ===== -->
+
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-modal-content">
+    <div class="modal-body">
+      <div class="modal-check">✓</div>
+
+      <img id="modal-image" src="" alt="Producto agregado">
+
+      <div class="modal-info">
+        <h4 id="modal-title"></h4>
+        <p>Producto agregado al carrito</p>
+
+        <div class="modal-actions">
+          <a href="cart.html" class="go-cart-btn">Ir al carrito</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==== BOTONCITO FLOTANTE WHATSAPP ===== -->
+
+<div class="whatsapp-container">
+  <div class="whatsapp-message" id="whatsapp-message">
+    <span>¿Necesitas ayuda?</span>
+    <strong>Conversa con un asesor</strong>
+  </div>
+
+  <a
+    href="https://wa.me/51940751509?text=Hola,%20quiero%20información%20sobre%20sus%20productos"
+    class="whatsapp-btn"
+    target="_blank"
+    aria-label="WhatsApp"
+  >
+    <i class='bx bxl-whatsapp'></i>
+  </a>
+</div>
+
+<!-- ===== CATALOGOS DESCARGABLES ======= -->
+
+<div class="catalog-card">
+  <div class="catalog-logo-box">
+    <img src="assets/images/brands/indeco.png" alt="Indeco" class="catalog-brand-logo">
+  </div>
+  <h3>Indeco</h3>
+  <a href="assets/catalogs/Indeco-catalogo.pdf" target="_blank">Ver catálogo</a>
+</div>
+
+
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>

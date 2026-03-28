@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Aselcorp</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+
+
+
+
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-left">
+          <span class="item">
+            <img src="assets/icons/mail.png" class="icon">
+            asesores@aselcorp.com.pe
+          </span>
+
+
+        <span class="item">
+          <img src="assets/icons/telephone.png" class="icon">
+          (511) 940 751 509
+        </span>
+      </div>
+
+      <div class="topbar-right">
+        <a href="#" class="item">
+          <img src="assets/icons/question.png" class="icon">
+          Atención al cliente
+        </a>
+
+        <span class="divider"></span>
+
+
+        <a href="#" class="item">
+          <img src="assets/icons/briefcase.png" class="icon">
+        Proveedores</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="navbar">
+    <div class="container navbar-container">
+      <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/aselcorp-logo-crop.png" alt="Aselcorp Logo">
+          </a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Buscar por producto, marca, sku...">
+        <button><i class='bx bx-search'></i></button>
+      </div>
+
+      <div class="nav-icons">
+        <a href="#" class="login">Iniciar sesión</a>
+        <i class='bx bx-user'></i>
+        <i class='bx bx-heart'></i>
+        <a href="cart.html" class="cart-icon">
+          <i class='bx bx-cart'></i>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-bar">
+    <div class="container menu-container">
+      <nav class="menu">
+        <a href="products.html" class="active">Productos</a>
+        <a href="catalogs.html">Catalogos</a>
+        <a href="#">Blog</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contáctanos</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PRODUCTOS ===== -->
+<main class="products-page container">
+
+  <h1>Productos</h1>
+
+  <!-- FILTERS -->
+<div class="category-filters">
+  <button data-category="all">Todos</button>
+  <button data-category="cables">Cables y Conductores</button>
+  <button data-category="distribution">Distribución Eléctrica</button>
+  <button data-category="lighting">Iluminación</button>
+  <button data-category="safety">Seguridad Eléctrica</button>
+  <button data-category="pipes">Tuberías y Canalización</button>
+  <button data-category="protection">Protección y Control</button>
+  <button data-category="installation">Materiales de Instalación</button>
+  <button data-category="measurement">Instrumentos de Medición</button>
+</div>
+
+  <!-- GRID DE PRODUCTOS -->
+  <div class="products-grid" id="products-container">
+    <!-- Aquí se renderizan los productos con JS -->
+  </div>
+
+</main>
+
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-modal-content">
+    <div class="modal-body">
+      <div class="modal-check">✓</div>
+
+      <img id="modal-image" src="" alt="Producto agregado">
+
+      <div class="modal-info">
+        <h4 id="modal-title"></h4>
+        <p>Producto agregado al carrito</p>
+
+        <div class="modal-actions">
+          <a href="cart.html" class="go-cart-btn">Ir al carrito</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==== BOTONCITO FLOTANTE WHATSAPP ===== -->
+<div class="whatsapp-container">
+  <div class="whatsapp-message" id="whatsapp-message">
+    <span>¿Necesitas ayuda?</span>
+    <strong>Conversa con un asesor</strong>
+  </div>
+
+  <a
+    href="https://wa.me/51940751509?text=Hola,%20quiero%20información%20sobre%20sus%20productos"
+    class="whatsapp-btn"
+    target="_blank"
+    aria-label="WhatsApp"
+  >
+    <i class='bx bxl-whatsapp'></i>
+  </a>
+</div>
+
+<!-- JS -->
+<script src="products.js"></script>
+
+
+
+</body>
+</html>
